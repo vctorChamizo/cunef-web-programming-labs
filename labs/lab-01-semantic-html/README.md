@@ -86,7 +86,7 @@ El fichero `index.html` debe incluir, como mínimo:
 ### 5.5 Atributos
 
 - Todas las imágenes incluyen `alt`, `width` y `height`.
-- Todos los enlaces incluyen un `href` válido: una URL externa o un fragmento como `#identificador`.
+- Todos los enlaces incluyen un `href` válido: una URL externa o un fragmento como `#section-id`.
 - La etiqueta `<html>` incluye el atributo `lang`.
 - Al menos un elemento utiliza `title` para aportar información complementaria.
 
@@ -131,7 +131,7 @@ El fichero `index.html` debe incluir, como mínimo:
 
 ## 9. Segunda parte — Sitio web con varias páginas
 
-En la primera parte se construye una única página y se utiliza `href` para saltos internos (`href="#calendario"`) o enlaces provisionales. En esta segunda parte, el resultado se amplía hasta formar un sitio con varias páginas conectadas mediante rutas relativas y una navegación compartida.
+En la primera parte se construye una única página y se utiliza `href` para saltos internos (`href="#fixtures"`) o enlaces provisionales. En esta segunda parte, el resultado se amplía hasta formar un sitio con varias páginas conectadas mediante rutas relativas y una navegación compartida.
 
 ### 9.1 Objetivos de aprendizaje
 
@@ -154,10 +154,10 @@ La elección de páginas debe responder al tema. Por ejemplo:
 
 Se aplican los siguientes requisitos:
 
-1. **Navegación compartida.** Todas las páginas incluyen el mismo `<nav>` y los mismos enlaces relativos a los ficheros hermanos (`index.html`, `calendario.html`, etc.).
+1. **Navegación compartida.** Todas las páginas incluyen el mismo `<nav>` y los mismos enlaces relativos a los ficheros hermanos (`index.html`, `fixtures.html`, etc.).
 2. **Páginas independientes.** El contenido se distribuye en ficheros separados. La página principal presenta resúmenes breves que enlazan las páginas de detalle.
 3. **Documentos completos.** Cada fichero incluye su propia declaración `<!DOCTYPE html>`, atributo `lang`, `<head>`, `<title>` y estructura `<header>`, `<main>` y `<footer>`. Cada página incluye al menos dos secciones de contenido coherente.
-4. **Tipos de enlace.** El sitio incluye al menos un enlace a un fichero con fragmento, por ejemplo `calendario.html#resultados`, y al menos un enlace externo con URL absoluta.
+4. **Tipos de enlace.** El sitio incluye al menos un enlace a un fichero con fragmento, por ejemplo `fixtures.html#results`, y al menos un enlace externo con URL absoluta.
 
 ### 9.3 Página de acceso
 
@@ -166,7 +166,7 @@ La página `login.html` debe incluir dentro de `<main>` un formulario semántico
 - Un elemento `<form>` que agrupe los campos.
 - Un campo de correo electrónico mediante `<input type="email">` y un `<label>` asociado. El atributo `for` de la etiqueta debe coincidir con el `id` del campo.
 - Un campo de contraseña mediante `<input type="password">`, con su propio `<label>` y el atributo `minlength`.
-- Un botón de envío mediante `<button type="submit">Acceder</button>`.
+- Un botón de envío mediante `<button type="submit">Sign in</button>`.
 - Atributos de validación como `required` y `minlength` donde resulten adecuados.
 
 > En el bloque I, el formulario pertenece únicamente al *frontend*: no incluye `action`, no envía datos a un servidor y no autentica a ninguna persona. La autenticación se implementará en el bloque II.

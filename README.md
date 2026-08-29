@@ -1,22 +1,22 @@
-# Laboratorios de Programación de Aplicaciones Web
+# Web Application Programming Labs
 
-Material de laboratorio de **Programación de Aplicaciones Web (G247)**, CUNEF Escuela Politécnica Superior.
+Lab materials for **Web Application Programming (G247)** at CUNEF Escuela Politécnica Superior.
 
-Los enunciados y ficheros iniciales se publican de forma progresiva. Las soluciones se incorporan después de la sesión correspondiente.
+Spanish lab briefs and their starter files are released progressively. Solutions are added after the corresponding session.
 
-## Laboratorios disponibles
+## Available labs
 
-| Laboratorio | Tema | Enunciado | Solución |
+| Lab | Topic | Brief | Solution |
 |---|---|---|---|
-| L1 | Estructura de una página con HTML semántico | [Disponible](laboratorios/lab-01-html-semantico/README.md) | Pendiente |
+| L1 | Semantic HTML page structure | [Available](labs/lab-01-semantic-html/README.md) | Not released |
 
-## Uso
+## Workflow
 
-1. Se abre el enunciado del laboratorio correspondiente.
-2. Se crea o actualiza el repositorio de trabajo de la pareja.
-3. Se completa la actividad siguiendo los requisitos y la lista de comprobación.
-4. Se valida el resultado y se sube al repositorio compartido de la pareja.
+1. Open the corresponding Spanish brief.
+2. Create or update the pair's working repository.
+3. Complete the activity and its self-check.
+4. Validate the result and push it to the pair's shared repository.
 
 ## Licencia
 
-Pendiente de confirmación con CUNEF. El material se facilita para su uso dentro de la asignatura.
+Pending confirmation with CUNEF. The material is provided for use within the course.
