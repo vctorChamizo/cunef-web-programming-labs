@@ -1,7 +1,7 @@
 # Laboratorio 1 — Estructura de una página
 
 **Programación de Aplicaciones Web (G247) · CUNEF Escuela Politécnica Superior**  
-Semana 1 · Sesión 3 · Práctica (AF2) · Trabajo en pareja
+Semana 1 · Sesión 3 · Práctica (AF2) · Trabajo individual o en pareja
 
 ---
 
@@ -26,7 +26,7 @@ Al finalizar la sesión se podrá:
 
 ## 3. Objetivo del trabajo
 
-Cada pareja elegirá un tema para una aplicación web y construirá el **esqueleto HTML** de su página principal. En esta fase solo se trabaja la estructura, sin diseño visual.
+Cada estudiante o pareja elegirá un tema para una aplicación web y construirá el **esqueleto HTML** de su página principal. En esta fase solo se trabaja la estructura, sin diseño visual.
 
 El tema es de libre elección. Se proponen, a modo de referencia:
 
@@ -44,10 +44,10 @@ El tema no forma parte de los criterios de revisión. La evaluación del resulta
 
 ## 4. Organización del trabajo
 
-- El laboratorio se realiza en parejas y el tema se acuerda antes de escribir código.
-- Las dos personas deben poder explicar todas las etiquetas del resultado final. El trabajo en pareja no consiste en dividir el documento en dos mitades independientes.
-- Se recomienda que una persona escriba mientras la otra comprueba el enunciado y detecta errores, intercambiando los papeles a mitad de la sesión.
-- Se entrega un único resultado por pareja, con los nombres de ambas personas en un comentario HTML al principio de cada documento.
+- El laboratorio puede realizarse individualmente o en pareja. La modalidad se elige libremente y el tema se decide antes de escribir código.
+- Cada participante debe poder explicar todas las etiquetas del resultado final. En modalidad de pareja, el trabajo no consiste en dividir el documento en dos mitades independientes.
+- En modalidad de pareja, se recomienda que una persona escriba mientras la otra comprueba el enunciado y detecta errores, intercambiando los papeles a mitad de la sesión.
+- Se entrega un único resultado por estudiante o pareja, con los nombres de todas las personas participantes en un comentario HTML al principio de cada documento.
 
 ---
 
@@ -107,8 +107,8 @@ El fichero `index.html` debe incluir, como mínimo:
 
 ## 7. Entrega de la primera parte
 
-- Un fichero `index.html` con los nombres de ambas personas en un comentario HTML al principio.
-- El fichero se sube al repositorio compartido de la pareja o se entrega por el medio indicado en clase.
+- Un fichero `index.html` con los nombres de todas las personas participantes en un comentario HTML al principio.
+- El fichero se sube al repositorio individual o compartido, según la modalidad elegida, o se entrega por el medio indicado en clase.
 - No se admite un fichero CSS, un bloque `<style>`, código JavaScript ni atributos `style=""`.
 
 ---
@@ -125,7 +125,7 @@ El fichero `index.html` debe incluir, como mínimo:
 - [ ] Se incluyen un enlace dentro de un párrafo, un `<strong>` o `<em>`, y un `<span>` dentro de texto corrido.
 - [ ] El W3C Markup Validator no muestra errores.
 - [ ] No se incluye CSS, JavaScript ni atributos `style=""`.
-- [ ] Las dos personas pueden explicar la estructura completa.
+- [ ] Cada participante puede explicar la estructura completa.
 
 ---
 
@@ -187,8 +187,8 @@ La página `login.html` debe incluir dentro de `<main>` un formulario semántico
 - Al menos cuatro ficheros HTML completos y válidos dentro de una misma carpeta.
 - Una navegación idéntica y funcional en todas las páginas.
 - Una página `login.html` con campos de correo y contraseña correctamente etiquetados y un botón de envío.
-- Los nombres de ambas personas en un comentario HTML al principio de cada fichero.
-- El resultado se sube al mismo repositorio compartido utilizado en la primera parte.
+- Los nombres de todas las personas participantes en un comentario HTML al principio de cada fichero.
+- El resultado se sube al mismo repositorio utilizado en la primera parte.
 - No se incluye CSS ni JavaScript.
 
 ### 9.6 Comprobación de la segunda parte

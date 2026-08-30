@@ -15,7 +15,7 @@ Spanish lab briefs and their starter files are released progressively. Solutions
 1. Open the corresponding Spanish brief.
 2. Create or update the pair's working repository.
 3. Complete the activity and its self-check.
-4. Validate the result and push it to the pair's shared repository.
+4. Validate the result and push it to the individual or shared repository, depending on the chosen work mode.
 
 ## Licencia
 
