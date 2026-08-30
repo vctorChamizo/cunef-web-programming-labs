@@ -3,6 +3,8 @@
 **Programación de Aplicaciones Web (G247) · CUNEF Escuela Politécnica Superior**  
 Semana 1 · Sesión 3 · Práctica (AF2) · Trabajo individual o en pareja
 
+El laboratorio puede realizarse individualmente o con la pareja elegida al comienzo de la asignatura. Cualquier cambio de pareja debe comunicarse previamente al profesor.
+
 ---
 
 ## 1. Contexto
@@ -44,7 +46,7 @@ El tema no forma parte de los criterios de revisión. La evaluación del resulta
 
 ## 4. Organización del trabajo
 
-- El laboratorio puede realizarse individualmente o en pareja. La modalidad se elige libremente y el tema se decide antes de escribir código.
+- La modalidad se elige al comienzo de la asignatura y el tema se decide antes de escribir código.
 - Cada participante debe poder explicar todas las etiquetas del resultado final. En modalidad de pareja, el trabajo no consiste en dividir el documento en dos mitades independientes.
 - En modalidad de pareja, se recomienda que una persona escriba mientras la otra comprueba el enunciado y detecta errores, intercambiando los papeles a mitad de la sesión.
 - Se entrega un único resultado por estudiante o pareja, con los nombres de todas las personas participantes en un comentario HTML al principio de cada documento.
@@ -108,7 +110,7 @@ El fichero `index.html` debe incluir, como mínimo:
 ## 7. Entrega de la primera parte
 
 - Un fichero `index.html` con los nombres de todas las personas participantes en un comentario HTML al principio.
-- El fichero se sube al repositorio individual o compartido, según la modalidad elegida, o se entrega por el medio indicado en clase.
+- El fichero se sube al repositorio público propio y el commit correspondiente se entrega por el medio indicado en clase.
 - No se admite un fichero CSS, un bloque `<style>`, código JavaScript ni atributos `style=""`.
 
 ---
