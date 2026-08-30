@@ -13,10 +13,6 @@ Spanish lab briefs and their starter files are released progressively. Solutions
 ## Workflow
 
 1. Open the corresponding Spanish brief.
-2. Create or update the pair's working repository.
+2. Create or update your own public working repository, whether you work individually or with a partner.
 3. Complete the activity and its self-check.
 4. Validate the result and push it to your own public repository.
-
-## Licencia
-
-Pending confirmation with CUNEF. The material is provided for use within the course.
