@@ -9,7 +9,7 @@ Spanish lab briefs and their starter files are released progressively. Solutions
 | Lab | Topic | Brief | Solution |
 |---|---|---|---|
 | L1 | Semantic HTML page structure | [Available](labs/lab-01-semantic-html/README.md) | [Available](labs/lab-01-semantic-html/solution/) |
-| L2 | Responsive CSS layout | [Available](labs/lab-02-responsive-css/README.md) | Not released |
+| L2 | Responsive CSS layout | [Available](labs/lab-02-responsive-css/README.md) | [Available](labs/lab-02-responsive-css/solution/) |
 | L3 | JavaScript logic and functions | [Available](labs/lab-03-javascript-logic-functions/README.md) | Not released |
 
 ## Workflow

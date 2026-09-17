@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-labelledby="title description">
+  <title id="title">Riverside FC home shirt</title>
+  <desc id="description">A short-sleeved football shirt with red and white vertical stripes.</desc>
+  <rect width="200" height="240" fill="#f6f3f4"/>
+  <path d="M58 28 22 48 8 94l34 12 12-28v134h92V78l12 28 34-12-14-46-36-20-20 18H78Z" fill="#ffffff" stroke="#6e0d29" stroke-width="4"/>
+  <path d="M58 28h24v184H58ZM106 42h24v170h-24ZM34 42l20 11v53l-12-28-19 7 8-28Z" fill="#a4133c"/>
+  <path d="M142 28v50l16 28 19-7-8-28-8-14Z" fill="#a4133c"/>
+  <path d="M78 28c3 16 41 16 44 0" fill="none" stroke="#6e0d29" stroke-width="5"/>
+  <circle cx="94" cy="100" r="16" fill="#6e0d29"/>
+  <text x="94" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">RFC</text>
+</svg>
