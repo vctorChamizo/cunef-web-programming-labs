@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Match-winning celebration</title>
+  <desc id="description">A footballer celebrates on a green pitch in front of a red-and-white crowd.</desc>
+  <rect width="640" height="360" fill="#dbeafe"/>
+  <rect y="210" width="640" height="150" fill="#3f8f55"/>
+  <path d="M0 210h640" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="320" cy="285" r="68" fill="none" stroke="#ffffff" stroke-width="5"/>
+  <g fill="#a4133c">
+    <rect x="0" y="70" width="640" height="88"/>
+    <circle cx="80" cy="66" r="18"/>
+    <circle cx="160" cy="66" r="18" fill="#ffffff"/>
+    <circle cx="240" cy="66" r="18"/>
+    <circle cx="320" cy="66" r="18" fill="#ffffff"/>
+    <circle cx="400" cy="66" r="18"/>
+    <circle cx="480" cy="66" r="18" fill="#ffffff"/>
+    <circle cx="560" cy="66" r="18"/>
+  </g>
+  <g stroke="#1c1c1c" stroke-width="12" stroke-linecap="round" fill="none">
+    <circle cx="320" cy="185" r="24" fill="#e8b58a" stroke="none"/>
+    <path d="M320 215v72M320 234l-56-42M320 234l57-48M320 286l-38 55M320 286l45 55"/>
+  </g>
+  <path d="M296 211h48v68h-48z" fill="#a4133c"/>
+  <circle cx="435" cy="315" r="20" fill="#ffffff" stroke="#1c1c1c" stroke-width="4"/>
+</svg>
