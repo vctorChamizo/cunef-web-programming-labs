@@ -1,0 +1,17 @@
+{
+  "name": "tasks-api-lab-solution",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reference solution for the Session 15 Express routes lab.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node --watch src/server.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
