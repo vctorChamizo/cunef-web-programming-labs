@@ -12,6 +12,7 @@ Spanish lab briefs and their starter files are released progressively. Solutions
 | L2 | Responsive CSS layout | [Available](labs/lab-02-responsive-css/README.md) | [Available](labs/lab-02-responsive-css/solution/) |
 | L3 | JavaScript logic and functions | [Available](labs/lab-03-javascript-logic-functions/README.md) | [Available](labs/lab-03-javascript-logic-functions/solution/) |
 | L4 | Express routes | [Available](labs/lab-04-express-routes/README.md) | [Available](labs/lab-04-express-routes/solution/) |
+| L5 | In-memory CRUD API | [Available](labs/lab-05-crud-api/README.md) | Not released |
 
 ## Workflow
 
