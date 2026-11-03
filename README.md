@@ -15,6 +15,7 @@ Spanish lab briefs and their starter files are released progressively. Solutions
 | L5 | In-memory CRUD API | [Available](labs/lab-05-crud-api/README.md) | [Available](labs/lab-05-crud-api/solution/) |
 | L6 | SQL and model layer | [Available](labs/lab-06-sql-models/README.md) | [Available](labs/lab-06-sql-models/solution/) |
 | L7 | Authentication, pagination and permissions | [Available](labs/lab-07-auth-pagination-permissions/README.md) | Not released |
+| L8 | React components | [Available](labs/lab-08-react-components/README.md) | Not released |
 
 ## Workflow
 
