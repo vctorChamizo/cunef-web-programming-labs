@@ -13,7 +13,7 @@ Spanish lab briefs and their starter files are released progressively. Solutions
 | L3 | JavaScript logic and functions | [Available](labs/lab-03-javascript-logic-functions/README.md) | [Available](labs/lab-03-javascript-logic-functions/solution/) |
 | L4 | Express routes | [Available](labs/lab-04-express-routes/README.md) | [Available](labs/lab-04-express-routes/solution/) |
 | L5 | In-memory CRUD API | [Available](labs/lab-05-crud-api/README.md) | [Available](labs/lab-05-crud-api/solution/) |
-| L6 | SQL and model layer | [Available](labs/lab-06-sql-models/README.md) | Not released |
+| L6 | SQL and model layer | [Available](labs/lab-06-sql-models/README.md) | [Available](labs/lab-06-sql-models/solution/) |
 | L7 | Authentication, pagination and permissions | [Available](labs/lab-07-auth-pagination-permissions/README.md) | Not released |
 
 ## Workflow

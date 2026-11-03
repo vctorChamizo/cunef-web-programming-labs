@@ -1,0 +1,18 @@
+{
+  "name": "tasks-api-models-lab-solution",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reference solution for the Session 22 SQL and model-layer lab.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test tests/tasksModel.test.js",
+    "selftest": "node solutions_example.js",
+    "db:schema": "psql \"$DATABASE_URL\" -f schema.sql"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "pg": "^8.23.1"
+  }
+}
