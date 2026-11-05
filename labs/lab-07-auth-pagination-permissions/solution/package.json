@@ -1,0 +1,22 @@
+{
+  "name": "tasks-api-auth-reference",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "JWT_SECRET=local-only-lab-7-test-secret node solutions_example.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "overrides": {
+    "body-parser": "1.20.9"
+  }
+}

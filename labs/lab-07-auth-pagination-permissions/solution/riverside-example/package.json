@@ -1,0 +1,24 @@
+{
+  "name": "riverside-example-auth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Worked example (read-only) — Riverside FC API with JWT auth, bcrypt login, Zod validation, pagination and admin/member + ownership permissions. Applies the Session 27 pattern to the football domain. Block II, G247 CUNEF.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --watch src/server.js",
+    "check": "JWT_SECRET=local-only-lab-7-test-secret node check.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "overrides": {
+    "body-parser": "1.20.9"
+  }
+}
