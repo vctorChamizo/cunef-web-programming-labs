@@ -1,4 +1,4 @@
-# Laboratorio 10 — Routing y estado en una SPA
+# Laboratorio 10 — Routing y estado global
 
 **Programación de Aplicaciones Web (G247) · CUNEF Escuela Politécnica Superior**
 Semana 12 · Sesión 39 · Práctica (AF2) · Trabajo individual o en pareja
@@ -40,29 +40,31 @@ Se copiarán:
 - `starter/starter_App.jsx` → `src/App.jsx`
 - `starter/starter_AuthContext.jsx` → `src/AuthContext.jsx`
 - `starter/starter_pages.jsx` → `src/pages.jsx`
+- `starter/starter_main.jsx` → `src/main.jsx`
 
 No se modifican los nombres de componentes, rutas ni contexto.
 
 ### 3.2 Implementación
 
-1. **Router raíz.** En `App.jsx`, situar `<BrowserRouter>` en el exterior, `<AuthProvider>` dentro y un `<Routes>` con `/`, `/login`, `/users`, `/users/:id` y `/settings`. Añadir un `<nav>` con enlaces.
-2. **Contexto.** `AuthProvider` mantiene `user`, inicialmente `null`, y expone `login(name)` y `logout()`. `useAuth()` devuelve `useContext(AuthContext)`.
-3. **Protección.** `<Protected>` devuelve `<Navigate to="/login" replace />` cuando no existe usuario y renderiza `children` en caso contrario. `/settings` debe utilizarlo.
-4. **Acceso.** El formulario de `Login` recibe un nombre. Al enviarlo, invoca `login(name)` y después `navigate("/settings")`. Esta autenticación es provisional y no contacta con un servidor.
+1. **Router raíz.** En `main.jsx`, envolver `App` con `<BrowserRouter>` → `<AuthProvider>` → `<App />`. En `App.jsx`, definir las rutas `/`, `/login`, `/users`, `/users/:id` y `/settings`, y un menú que muestre «Entrar» o «Salir» según la sesión.
+2. **Contexto.** Inicializar `token` desde `localStorage.getItem("token")`. Exponer `{ isLoggedIn: Boolean(token), signIn, signOut }` mediante `<AuthContext.Provider value={value}>`. El hook `useAuth = () => useContext(AuthContext)` devuelve el contexto.
+3. **Acceso simulado.** `signIn(email, password)` es `async`: rechaza campos vacíos, guarda un token ficticio en `localStorage` y actualiza el estado. `signOut()` borra ambos. JSONPlaceholder no autentica: esto es una simulación; el JWT real se gestiona en la Práctica 2.
+4. **Protección y formulario.** `Protected` consulta `useAuth().isLoggedIn` y devuelve `<Navigate to="/login" replace />` si no hay sesión. El formulario pide email y contraseña, llama a `await signIn(email, password)` dentro de `try/catch`, muestra el error y navega a `/settings` tras el éxito.
 5. **Filtro elevado.** `UsersList` mantiene el término de búsqueda y lo comparte entre el campo y la lista filtrada.
 6. **Detalle.** `UserDetail` obtiene `id` mediante `useParams()` y muestra `<h2>User {id}</h2>`.
 
 ### 3.3 Verificación
 
 - `/settings` redirige a `/login` cuando no existe sesión.
-- Después del formulario, `/settings` se muestra correctamente.
+- Después del formulario, `/settings` se muestra correctamente; la sesión se conserva al recargar y desaparece al salir.
+- Si falta email o contraseña, se muestra un error.
 - El filtro reduce la lista en tiempo real.
 - La navegación no provoca recargas completas.
 
 ### 3.4 Entrega de la primera parte
 
 - Cinco rutas accesibles desde la navegación.
-- `AuthContext` con `user`, `login`, `logout` y `useAuth()`.
+- `AuthContext` con `isLoggedIn`, `signIn`, `signOut` y `useAuth()`.
 - `<Protected>` funcional.
 - Filtro de usuarios basado en estado elevado.
 - Cada participante debe poder explicar todos los ficheros.
@@ -96,8 +98,8 @@ No se modifican los nombres de componentes, rutas ni contexto.
 **Routing y autenticación:**
 
 - [ ] Existen las cinco rutas requeridas.
-- [ ] `BrowserRouter` envuelve `AuthProvider` y la aplicación.
-- [ ] `useAuth()` devuelve `{ user, login, logout }`.
+- [ ] `main.jsx` contiene `BrowserRouter` → `AuthProvider` → `App`.
+- [ ] `useAuth()` devuelve `{ isLoggedIn, signIn, signOut }`; el token simulado persiste y se elimina al salir.
 - [ ] `<Protected>` utiliza `<Navigate to="/login" replace />`.
 - [ ] `/settings` requiere autenticación.
 - [ ] El filtro de usuarios funciona mediante estado elevado.

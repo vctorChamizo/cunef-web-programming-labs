@@ -1,45 +1,16 @@
-/*
-  Starter file for Session 39 Lab — Part 1 (Guided Routing + State)
-  Web Application Programming (G247) · CUNEF Escuela Politécnica Superior
-
-  Week 12 · Session 39 · Practice (AF2) · Individual or pair work
-
-  Do NOT rename AuthProvider, useAuth, or the AuthContext object — the
-  imports in starter_App.jsx assume these exact names.
-*/
-
-// =====================================================================
-// AUTH CONTEXT — the Session 38 pattern, applied to a mocked login
-// =====================================================================
-// createContext(defaultValue) → a Context object.
-// <Context.Provider value={...}> makes `value` visible to everything
-// below it in the component tree.
-// useContext(Context) reads the current value from the nearest provider.
-//
-// The provider owns the user state; the components below only read it
-// via the useAuth() hook.
-// =====================================================================
-
+/* Lab 10 — Week 12, Session 39. Individual or pair work. */
 import { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-  // TODO 1: hold the current user in useState. `null` means "not logged in".
-  // const [user, setUser] = useState(null);
-
-  // TODO 2: expose two mutators — no real network call, just a fake string.
-  // const login  = (name) => setUser({ name });
-  // const logout = () => setUser(null);
-
-  // TODO 3: return <AuthContext.Provider value={{ user, login, logout }}>
-  return (
-    <AuthContext.Provider value={/* TODO */ null}>
-      {children}
-    </AuthContext.Provider>
-  );
+  // TODO: initialize token from localStorage.getItem("token").
+  // TODO: async signIn(email, password) rejects empty fields, stores
+  // a simulated token in localStorage and state. No real server call.
+  // TODO: signOut removes the token from localStorage and state.
+  // TODO: expose { isLoggedIn: Boolean(token), signIn, signOut }.
+  const value = null;
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
-export function useAuth() {
-  return useContext(AuthContext);
-}
+export const useAuth = () => useContext(AuthContext);

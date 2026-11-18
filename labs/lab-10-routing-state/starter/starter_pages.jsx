@@ -26,26 +26,27 @@ export function Home() {
 }
 
 // ---------------------------------------------------------------------
-// Login — Part 1: call login(name) on submit, navigate to /settings.
-// ---------------------------------------------------------------------
+// Login — simulated sign-in with email and password.
 export function Login() {
-  const { login } = useAuth();
+  const { signIn } = useAuth();
   const navigate = useNavigate();
-  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  function onSubmit(e) {
+  async function onSubmit(e) {
     e.preventDefault();
-    // TODO: call login(name) then navigate("/settings").
+    // TODO: clear error, await signIn(email, password), navigate on success
+    // and display the error in catch.
   }
 
   return (
     <form onSubmit={onSubmit}>
       <h1>Login</h1>
-      <label>
-        Your name:{" "}
-        <input value={name} onChange={(e) => setName(e.target.value)} />
-      </label>
-      <button type="submit" disabled={!name}>Log in</button>
+      <label>Email: <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} /></label>
+      <label>Password: <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /></label>
+      <button type="submit">Entrar</button>
+      {error && <p role="alert">{error}</p>}
     </form>
   );
 }
@@ -106,12 +107,6 @@ export function UserDetail() {
 // Settings — shows who's logged in and offers a Logout.
 // ---------------------------------------------------------------------
 export function Settings() {
-  const { user, logout } = useAuth();
-  return (
-    <section>
-      <h1>Settings</h1>
-      <p>Logged in as: <strong>{user?.name ?? "(nobody)"}</strong></p>
-      <button onClick={logout}>Log out</button>
-    </section>
-  );
+  const { isLoggedIn } = useAuth();
+  return <section><h1>Settings</h1><p>{isLoggedIn ? "Session active" : "No session"}</p></section>;
 }
