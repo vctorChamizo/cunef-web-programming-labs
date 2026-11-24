@@ -1,0 +1,67 @@
+/* Starter file for Session 39 Lab — copy to src/index.css.
+   Replaces the Vite template stylesheet so the pages read clearly.
+   Styling is not part of this lab: no changes are needed here. */
+
+:root {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1f2328;
+  background: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.main-nav button {
+  margin-left: auto;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+a {
+  color: #0969da;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.4rem 0.6rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 20rem;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.user-list {
+  padding-left: 1.25rem;
+}
+
+.user-list li {
+  margin: 0.25rem 0;
+}
+
+.error {
+  color: #cf222e;
+}

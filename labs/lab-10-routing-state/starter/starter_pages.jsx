@@ -41,12 +41,18 @@ export function Login() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className="login-form" onSubmit={onSubmit}>
       <h1>Login</h1>
-      <label>Email: <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} /></label>
-      <label>Password: <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /></label>
+      <label>
+        Email
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      </label>
+      <label>
+        Password
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      </label>
       <button type="submit">Entrar</button>
-      {error && <p role="alert">{error}</p>}
+      {error && <p className="error" role="alert">{error}</p>}
     </form>
   );
 }
@@ -71,7 +77,7 @@ export function UsersList() {
     <section>
       <h1>Users</h1>
       {/* TODO: <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Filter…" /> */}
-      <ul>
+      <ul className="user-list">
         {/* TODO: render filtered.map((u) => (
               <li key={u.id}>
                 <Link to={`/users/${u.id}`}>{u.name}</Link>
@@ -108,5 +114,10 @@ export function UserDetail() {
 // ---------------------------------------------------------------------
 export function Settings() {
   const { isLoggedIn } = useAuth();
-  return <section><h1>Settings</h1><p>{isLoggedIn ? "Session active" : "No session"}</p></section>;
+  return (
+    <section>
+      <h1>Settings</h1>
+      <p>{isLoggedIn ? "Session active" : "No session"}</p>
+    </section>
+  );
 }

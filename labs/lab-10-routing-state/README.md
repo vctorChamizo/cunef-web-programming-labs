@@ -41,8 +41,9 @@ Se copiarán:
 - `starter/starter_AuthContext.jsx` → `src/AuthContext.jsx`
 - `starter/starter_pages.jsx` → `src/pages.jsx`
 - `starter/starter_main.jsx` → `src/main.jsx`
+- `starter/starter_index.css` → `src/index.css`
 
-No se modifican los nombres de componentes, rutas ni contexto.
+No se modifican los nombres de componentes, rutas ni contexto. La hoja de estilos sustituye a la de la plantilla de Vite para que las páginas se lean con claridad; el estilo no forma parte de la práctica.
 
 ### 3.2 Implementación
 
